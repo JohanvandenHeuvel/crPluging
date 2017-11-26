@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Vote </title>
+		 <script src="client.js"></script> 
+		 <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=0.4, user-scalable=0"/> <!--320-->
+		 <style>
+			html, body { background-color: black; margin: 0; height: 100%; width: 100%; }
+			
+			img { height:100%; transition: color 1s; }
+		
+			.wrapper { height: 90%; width: 90%; margin: 0 auto; margin-top: 2.5%; }
+		 
+			table.fixed { height: 80%; width: 100%;  }
+			table.fixed td { text-align:center; }
+			table fixed tr { height: 10%; }
+			
+			div.inTable { height:90%; width: 90%; text-align:center; margin: 0 auto; border: 2px solid white; border-radius: 10px; box-shadow:8px 8px 1.5px #999;}
+		 </style>
+		 	</head>
+	
+	<body onload="main();">
+		<table width='100%' height='100%' class="fixed">
+			<col width="50%" />
+			<col width="50%" />
+			<tr>
+				<div id='silent' class='inTable' style='height:20%; width:95%;'><div class='wrapper' style='margin-top:1%'><img src="shush.png"/></div> </div>
+			</tr>
+			<tr>
+				<td> <div id='slower' class='inTable'><div class='wrapper'><img src="back.png"/></div> </div> </td>
+				<td> <div id='faster' class='inTable'><div class='wrapper'><img src='for.png'/></div></div> </td>
+			</tr>
+			<tr>
+				<td> <div id='repeat' class='inTable'><div class='wrapper'><img src='undo.png'/></div> </div></td>
+				<td> <div id='example' class='inTable'><div class='wrapper'><img src='search.png'/></div></div> </td>
+			</tr>
+			<tr>
+				<td> <div id='downvote' class='inTable'><div class='wrapper'><img src='down.png'/></div></div> </td>
+				<td> <div id='upvote' class='inTable'><div class='wrapper'><img src='up.png'/></div></div> </td>
+			</tr>
+		</table>
+	</body>
+</html>
